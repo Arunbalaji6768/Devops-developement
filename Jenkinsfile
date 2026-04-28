@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Deploy to Kubernetes') {
             steps {
-                bat "kubectl apply -f deployment.yaml"
+                bat "kubectl apply -f deployment.yaml --validate=false"
                 bat "kubectl rollout restart deployment devops-app-deployment"
             }
         }
