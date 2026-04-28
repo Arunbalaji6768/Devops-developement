@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: devops-app
-        image: aruneswaran1312/devops-app:latest # Replace with your username
+        image: arunbalaji6768/devops-app:latest # Replace with your username
         ports:
         - containerPort: 3000
 ---

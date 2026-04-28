@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment {
         DOCKERHUB_CREDENTIALS = credentials('dockerhub-creds')
-        IMAGE_NAME = "aruneswaran1312/devops-app" 
+        IMAGE_NAME = "arunbalaji6768/devops-app" 
     }
     stages {
         stage('Checkout') {
