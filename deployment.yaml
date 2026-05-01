@@ -6,15 +6,15 @@ spec:
   replicas: 2
   selector:
     matchLabels:
-      app: devops-app
+      app: devops-app-standard  # Changed to be unique
   template:
     metadata:
       labels:
-        app: devops-app
+        app: devops-app-standard  # Changed to be unique
     spec:
       containers:
       - name: devops-app
-        image: arunbalaji6768/devops-app:latest # Replace with your username
+        image: arunbalaji6768/devops-app:latest 
         ports:
         - containerPort: 3000
 ---
@@ -28,4 +28,4 @@ spec:
   - port: 80
     targetPort: 3000
   selector:
-    app: devops-app
+    app: devops-app-standard  # Points specifically to the Standard pods
